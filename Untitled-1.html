@@ -1,51 +1,44 @@
+
 /*Font Awesome Free Icons*/
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
-
 /*General Style*/
-body {
+body{
      margin: 0;
      line-height: 1.5;
      font-size: 16px;
      font-family: 'Montserrat', sans-serif;
      font-weight: 400;
 }
-
-* {
+*{
      margin: 0;
      padding: 0;
      outline: none;
      text-decoration: none;
      box-sizing: border-box;
 }
-
-::before,
-::after {
+::before, ::after{
      box-sizing: border-box;
 }
-
-.section {
-     background-color: #f2f2fc;
+.section{
+     background-color:#f2f2fc;
      min-height: 100vh;
-     display: block;
-     padding: 0 30px;
+    display: block;
+    padding: 0 30px;
 }
-
-.section .container {
+.section .container{
      padding-top: 60px;
      padding-bottom: 70px;
 }
-
-.section-title {
+.section-title{
      -ms-flex: 0 0 100%;
      flex: 0 0 100%;
      max-width: 100%;
      margin-bottom: 60px;
-}
-
-.section-title h2 {
+} 
+.section-title h2{
      font-size: 40px;
      color: #302e4d;
      font-family: 'Rubik', sans-serif;
@@ -53,8 +46,7 @@ body {
      margin: 0;
      position: relative;
 }
-
-.section-title h2::before {
+.section-title h2::before{
      content: '';
      height: 4px;
      width: 50px;
@@ -62,8 +54,7 @@ body {
      top: 100%;
      left: 0;
 }
-
-.section-title h2::after {
+.section-title h2::after{
      content: '';
      height: 4px;
      width: 25px;
@@ -72,8 +63,7 @@ body {
      left: 0;
      margin-top: 8px;
 }
-
-.row {
+.row{
      display: -ms-flexbox;
      display: flex;
      -ms-flex-wrap: wrap;
@@ -81,30 +71,25 @@ body {
      margin-right: -15px;
      margin-left: -15px;
      position: relative;
-
+     
 }
-
-.padd-15 {
+.padd-15{
      padding-left: 15px;
      padding-right: 15px;
 }
-
-.main-content {
+.main-content{
      padding-left: 270px;
 }
-
-.container {
+.container{
      max-width: 1100px;
      width: 100%;
-     margin: auto;
+     margin: auto ;
 }
-
-.shadow-dark {
+.shadow-dark{
      -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
      box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-
-.btn {
+.btn{
      font-size: 16px;
      font-family: 'Rubik', sans-serif;
      font-weight: 500;
@@ -117,48 +102,43 @@ body {
      white-space: nowrap;
 
 }
-
-.btn:h over {
-     -webkit-transform: scale(1.05);
+.btn:h over{
+-webkit-transform: scale(1.05);
      transform: scale(1.05);
 }
-
-.hidden {
-     display: none !important;
+.hidden{
+     display: none!important;
 
 }
 
 /*Aside*/
-.aside {
+.aside{
      width: 270px;
-     background-color: #fdf9ff;
+     background-color:#fdf9ff;
      position: fixed;
      height: 100%;
      left: 0;
      top: 0;
      z-index: 10;
-     border-right: 1px solid #e8dfec;
+     border-right:1px solid #e8dfec;
      padding: 30px;
 }
-
-.aside .logo {
+.aside .logo{
      padding: 30px 0;
 }
-
-.aside .logo a {
+.aside .logo a{
      font-size: 40px;
      color: #302e4d;
      font-family: 'Rubik', sans-serif;
      font-weight: 700;
      text-decoration: none;
-     display: inline-block;
-     position: relative;
-     padding: 0 10px;
-     line-height: 50px;
+     display:inline-block;
+            position: relative;
+            padding: 0 10px;
+            line-height: 50px;
 
 }
-
-.aside .logo a::before {
+.aside .logo a::before{
      content: '';
      height: 20px;
      width: 20px;
@@ -166,8 +146,7 @@ body {
      top: 0;
      left: 0;
 }
-
-.aside .logo a::after {
+.aside .logo a::after{
      content: '';
      height: 20px;
      width: 20px;
@@ -175,11 +154,10 @@ body {
      bottom: 0;
      right: 0;
 }
-
-.aside .nav-toggler {
+.aside .nav-toggler{
      height: 40px;
      width: 45px;
-     border: 1px solid #d4d4e3;
+     border: 1px solid #d4d4e3 ;
      cursor: pointer;
      position: fixed;
      left: 300px;
@@ -187,23 +165,22 @@ body {
      z-index: 11;
      border-radius: 5px;
      background-color: #fdf9ff;
-     /* display: -ms-flexbox;
+    /* display: -ms-flexbox;
      display: flex;*/
      display: none;
-     -ms-flex-align: center;
+    -ms-flex-align: center;
      align-items: center;
-     -ms-flex-pack: center;
+    -ms-flex-pack: center;
      justify-content: center;
 }
 
-.aside .nav-toggler span {
+.aside .nav-toggler span{
      height: 2px;
      width: 18px;
      display: inline-block;
-     position: relative;
+     position: relative ;
 }
-
-.aside .nav-toggler span::before {
+.aside .nav-toggler span::before{
      content: '';
      height: 2px;
      width: 18px;
@@ -211,8 +188,7 @@ body {
      top: -6px;
      left: 0;
 }
-
-.aside .nav-toggler span::after {
+.aside .nav-toggler span::after{
      content: '';
      height: 2px;
      width: 18px;
@@ -220,84 +196,71 @@ body {
      top: 6px;
      left: 0;
 }
-
-.aside .nav {
+.aside .nav{
      list-style: none;
      margin: 80px 0;
      padding: 0;
 }
-
-.aside .nav li {
+.aside .nav li{
      display: block;
-}
-
-.aside .nav li a {
+     }
+.aside .nav li a{
      font-size: 16px;
      font-weight: 600;
      color: #302e4d;
      text-decoration: none;
      line-height: 45px;
-     display: block;
-     border-bottom: 1px solid #e8dfec;
+     display: block ;
+     border-bottom:1px solid #e8dfec;
      -webkit-transition: all 0.3s ease;
      transition: all 0.3s ease;
      text-transform: capitalize;
 
 }
-
-.aside .nav li a:not(.active):hover {
+.aside .nav li a:not(.active):hover{
      padding-left: 5px;
 }
-
-.aside .nav li a .fa {
-     margin-right: 5px;
+.aside .nav li a .fa{
+     margin-right: 5px ;
 }
-
-.aside .copyright-text {
+.aside .copyright-text{
      font-size: 13px;
-     color: #7d7d7d;
+     color: #7d7d7d ;
 }
-
 /*Home*/
-.home {
-     min-height: 100vh;
+.home{
+     min-height:100vh;
      display: -ms-flexbox;
      display: flex;
 }
-
-.home .intro {
+.home .intro{
      text-align: center;
 }
-
-.home .intro img {
+.home .intro img{
      height: 220px;
-     width: 220px;
+     width:220px;
      border-radius: 50%;
      display: inline-block;
      border: 8px solid #ffffff;
 }
-
-.home .intro h1 {
+.home .intro h1{
      font-size: 30px;
      color: #302e4d;
      font-family: 'Rubik', sans-serif;
      font-weight: 700;
      margin: 20px 0 5px;
 }
-
-.home .intro p {
+.home .intro p{
      font-size: 16px;
      font-weight: 500;
      margin: 0;
      line-height: 22px;
      color: #504e70;
 }
-
-.home .intro .social-link {
+.home .intro .social-link{
      margin-top: 25px;
 }
-
-.home .intro .social-link a {
+.home .intro .social-link a{
      height: 35px;
      width: 35px;
      display: inline-block;
@@ -310,146 +273,81 @@ body {
      -webkit-transition: all 0.3s ease;
      transition: all 0.3s ease;
 }
-
-.home .intro .social-link a:hover {
+.home .intro .social-link a:hover{
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
 }
 
 /* About SEction*/
-
-.about .about-content {
+ 
+.about .about-content{
      -ms-flex: 0 0 100%;
      flex: 0 0 100%;
      max-width: 100%;
 }
-
-.about .about-content .about-text {
+.about .about-content .about-text{
      -ms-flex: 0 0 100%;
      flex: 0 0 100%;
      max-width: 100%;
 }
-
-.about .about-content .about-text h3 {
+.about .about-content .about-text h3{
      font-size: 24px;
      margin-bottom: 15px;
      font-weight: 700;
      color: #302e4d;
 }
-
-.about .about-content .about-text p {
+.about .about-content .about-text p{
      font-size: 16px;
      line-height: 25px;
      color: #504e70;
      margin: 0;
 }
-
-.about .about-content .personal-info .info-item {
+.about .about-content .personal-info .info-item{
      -ms-flex: 0 0 50%;
      flex: 0 0 50%;
      max-width: 50%;
 }
-
-.about .about-content .personal-info {
-     /* background-color: red;*/
-     -ms-flex: 0 0 60%;
-     flex: 0 0 60%;
-     max-width: 60%;
-     margin-top: 40px;
+.about .about-content .personal-info{
+ /* background-color: red;*/
+ -ms-flex: 0 0 60%;
+ flex: 0 0 60%;
+ max-width: 60%;
 }
-
-.about .about-content .personal-info .info-item p {
+.about .about-content .personal-info .info-item p{
      font-weight: 600;
      padding: 10px 0;
      font-size: 16px;
      color: #302e4d;
-     margin: 0;
+     margin: 0; 
      border-bottom: 1px solid #e8dfec;
 }
-
-.about .about-content .personal-info .info-item p span {
+.about .about-content .personal-info .info-item p span{
      font-weight: 400;
      color: #504e70;
      display: inline-block;
 }
-
-.about .about-content .personal-info .buttons {
+.about .about-content .personal-info .buttons{
      margin-top: 30px;
 }
-
-.about .about-content .personal-info .buttons .btn {
+.about .about-content .personal-info .buttons .btn{
      margin-right: 15px;
      margin-top: 10px;
 }
+.about .about-content .skills{
+/*background-color: blue;*/
+-ms-flex: 0 0 40%;
+flex: 0 0 40%;
+max-width: 40%;
+}
+.about .about-content .skills .{
 
-.about .about-content .skills {
-     /*background-color: blue;*/
-     -ms-flex: 0 0 40%;
-     flex: 0 0 40%;
-     max-width: 40%;
-     margin-top: 30px;
 }
 
-.about .about-content .skills .skill-item {
-     -ms-flex: 0 0 100%;
-     flex: 0 0 100%;
-     max-width: 100%;
-}
 
-.about .about-content .skills .skill-item h5 {
-     line-height: 30px;
-     font-weight: 600;
-     padding: 10px 0;
-     font-size: 16px;
-     color: #302e4d;
-}
 
-.about .about-content .skills .skill-item .progress {
-     background-color: #e3e3e3;
-     height: 7px;
-     border-radius: 4px;
-     width: 100%;
-     position: relative;
-}
 
-.about .about-content .skills .skill-item {
-     margin-bottom: 20px;
-}
 
-.about .about-content .skills .skill-item .progress .progress-in {
-     position: absolute;
-     left: 0;
-     top: 0;
-     border-radius: 4px;
-     height: 100%;
-}
 
-.about .about-content .skills .skill-item .skill-percent {
-     /*display: none;*/
-     line-height: 40px;
-     position: absolute;
-     color: #302e4d;
-     right: 0;
-     top: -40px;
-     font-weight: 400;
-}
 
-.about .about-content .education {
-     -ms-flex: 0 0 50%;
-     flex: 0 0 50%;
-     max-width: 50%;
-     margin-top: 30px;
-}
 
-.about .about-content .experience {
-     -ms-flex: 0 0 50%;
-     flex: 0 0 50%;
-     max-width: 50%;
-     margin-top: 30px;
-}
-  .about .about-content h3 .title{
-     font-size: 24px;
-     /*margin-bottom: 50px;*/
-     font-weight: 700;
-     color: #302e4d;
-  }
+
