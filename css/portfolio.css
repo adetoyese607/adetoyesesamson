@@ -98,6 +98,7 @@ select {
 
 .main-content {
      padding-left: 270px;
+    
 }
 
 .container {
@@ -648,7 +649,6 @@ select {
      display: block;
      animation: showItem 0.5s ease;
 }
-
 @-webkit-keyframes showItem {
      0% {
           -webkit-transform: scale(0.8);
@@ -808,6 +808,7 @@ select {
      text-align: right;
      color: #ffffff;
      line-height: 30px;
+     cursor: pointer;
 }
 
 .lightbox .lightbox-content .lightbox-caption {
@@ -1035,3 +1036,55 @@ select {
      height: 50px;
      padding: 0 50px;
 }
+
+/*Responsive*/
+@media (max-width: 1199px){
+     /* .aside{
+          left: -270px;
+     }
+     .main-content{
+          padding-left: 0;
+     } */
+     .about .about-content .personal-info .info-item p span{
+          display: block;
+          margin-left: 0 ;
+     }
+}
+@media (max-width: 991px){
+     .blog .blog-item,
+     .portfolio .portfolio-item,
+     .service .service-item{
+          -ms-flex: 0 0 50%;
+           flex: 0 0 50%;
+           max-width: 50%;
+     }
+}
+@media (max-width: 767px){
+     .contact .contact-form .col-6,
+     .blog .blog-item,
+     .service .service-item,
+     .about .about-content .experience,
+     .about .about-content .education,
+     .about .about-content .skills,     
+     .about .about-content .personal-info{
+           -ms-flex: 0 0 100%;
+           flex: 0 0 100%;
+           max-width: 100%;
+     }
+     .portfolio .portfolio-filter button{
+            margin-bottom: 10px;
+     }
+}
+@media (max-width: 650px){
+     .contact .contact-info-item{
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+     }
+@media (max-width: 575px){
+            .portfolio .portfolio-item{
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+     }
+}}
