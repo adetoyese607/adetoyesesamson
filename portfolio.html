@@ -6,9 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Template css Files-->
-    <link rel="stylesheet" href="css/portfolio.css" ty>
-    <link rel="stylesheet" href="css/skins/pink.css">
-
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css">
+    <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+    <!-- Live Style Switcher - demo only-->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
 </head>
 
 <body>
@@ -49,8 +55,8 @@
                 <div class="container">
                     <div class="intro">
                         <img src="image/IMG_1953.jpeg" alt="profile" class="shadow-dark">
-                        <h1>AdepT-Techie</h1>
-                        <p>I'm a Web Developer</p>
+                        <h1><span class="auto-input"></span></h1>
+                        <p>I'm a <span class="auto-put"></span></p>
                         <div class="social-link">
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -649,8 +655,27 @@
 
     </div>
     <!--Lightbox end-->
+    <!-- Live Style Switcher - Demo Only-->
+    <div class="style-switcher">
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="#" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a> </li>
+            <li><a href="#" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a> </li>
+            <li><a href="#" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a> </li>
+            <li><a href="#" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a> </li>
+            <li><a href="#" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a> </li>
+        </ul>
+    </div>
+
+    <!-- Live Style Switcher - Demo Only-->
+
+
+
+
 
     <!--Template js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <script src="js/portfolio.js"></script>
 </body>
 

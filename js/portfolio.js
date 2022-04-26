@@ -87,3 +87,18 @@ const filterContainer=document.querySelector(".portfolio-filter"),
         toggleLightbox();
     }
  })
+
+
+ var typed = new Typed(".auto-input", {
+     strings: ["AdepT-Techie"],
+     typeSpeed: 100,
+     backSpeed: 100,
+     loop: true
+ })
+
+ var typed = new Typed(".auto-put", {
+    strings: ["Web Developer.", "Project Manager."],
+    typeSpeed: 50,
+    backSpeed:100,
+    loop: true
+})
