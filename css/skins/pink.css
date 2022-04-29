@@ -14,8 +14,11 @@
 .lightbox .lightbox-controls .next-item .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,       
 .portfolio .portfolio-filter button.active,
+body.dark .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 .about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active{
     color: #ec1839;

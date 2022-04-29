@@ -38,6 +38,44 @@ select {
      min-height: 100vh;
      display: block;
      padding: 0 30px;
+     position: fixed;
+     left: 270px;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 0;
+     overflow-x: hidden;
+     overflow-y: auto;
+     opacity: 1;
+}
+.section.back-section{
+     z-index: 1;
+}
+.section.active{
+     opacity: 1;
+     z-index: 2;
+     -webkit-animation: slideSection 1s ease;
+     animation: slideSection 1s ease;
+}
+@-webkit-keyframes slideSection{
+     0%{
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+     }
+     100%{
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+     }
+}
+@keyframes slideSection{
+     0%{
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+     }
+     100%{
+          -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+     }
 }
 
 .section .container {
@@ -96,10 +134,10 @@ select {
      padding-right: 15px;
 }
 
-.main-content {
+/* .main-content {
      padding-left: 270px;
     
-}
+} */
 
 .container {
      max-width: 1100px;
@@ -662,6 +700,19 @@ select {
           opacity: 1;
      }
 }
+@keyframes showItem {
+     0% {
+          -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+          opacity: 0;
+     }
+
+     100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+     }
+}
 
 .portfolio .portfolio-item-inner {
      border: 6px solid #fdf9ff;
@@ -785,6 +836,18 @@ select {
 }
 
 @-webkit-keyframes lightboxImage {
+     0% {
+          -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+     }
+
+     100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+     }
+
+}
+@keyframes lightboxImage {
      0% {
           -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -1036,6 +1099,61 @@ select {
      height: 50px;
      padding: 0 50px;
 }
+
+ /* Dark Mode  */
+ body.dark .section{
+      background-color: #151515;
+ }
+body.dark .contact .contact-form .form-item .form-control,
+ body.dark .blog .blog-item-inner .blog-info,
+ body.dark .service .service-item .service-item-inner,
+ body.dark .about .about-content .timeline,
+ body.dark .aside{
+      background-color: #222222;
+ }
+body.dark .contact .contact-info-item h4,
+ body.dark .blog .blog-item-inner .blog-info .blog-title,
+body.dark .portfolio .portfolio-filter button,
+body.dark .service .service-item .service-item-inner h4,
+body.dark .about .about-content .timeline .timeline-title,
+ body.dark .about .about-content h3.title,
+  body.dark .about .about-content .skills .skill-item h5,
+ body.dark .about .about-content .personal-info .info-item p,
+ body.dark .about .about-content .about-text h3,
+ body.dark .section-title h2,
+ body.dark .home .intro h1,
+ body.dark .aside .logo a,
+ body.dark .aside .nav li a{
+    color: #ffffff;
+ }
+ body.dark .contact .contact-form .form-item .form-control, 
+ body.dark .contact .contact-info-item p,
+body.dark .blog .blog-item-inner .blog-info .blog-tags,
+ body.dark .blog .blog-item-inner .blog-info .blog-description,
+ body.dark .service .service-item .service-item-inner p,
+body.dark .about .about-content .timeline .timeline-text,
+body.dark .about .about-content .timeline .timeline-date,
+body.dark .about .about-content .skills .skill-item .skill-percent,
+ body.dark .about .about-content .personal-info .info-item p span,
+ body.dark .about-content .about-text p,
+ body.dark .home .intro p{
+      color: #e9e9e9;
+ }
+ body.dark .aside,
+ body.dark .contact .contact-form .form-item .form-control,
+body.dark .blog .blog-item-inner,
+body.dark .portfolio .portfolio-item-inner,
+ body.dark .service .service-item .service-item-inner, 
+ body.dark .about .about-content .timeline,
+ body.dark .about .about-content .personal-info .info-item p,
+ body.dark .aside .nav li a{
+      border-color: #393939;
+ } 
+ body.dark .shadow-dark{
+     -webkit-box-shadow: none;
+      box-shadow: none;
+ }
+
 
 /*Responsive*/
 @media (max-width: 1199px){
