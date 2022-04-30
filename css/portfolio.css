@@ -283,6 +283,7 @@ select {
      height: 40px;
      width: 45px;
      border: 1px solid #d4d4e3;
+
      cursor: pointer;
      position: fixed;
      left: 300px;
@@ -1231,7 +1232,9 @@ body.dark .portfolio .portfolio-item-inner,
             left: 30px;
        }
        .aside .nav-toggler.open{
-            left: 300px;
+            left: 224px;
+            border-radius: 5px 0 0 5px ;
+            border-right: none;
        }
        .aside{
             left: -270px;
