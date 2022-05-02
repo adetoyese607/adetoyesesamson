@@ -1164,6 +1164,8 @@ select {
 .contact .contact-form .btn {
      height: 50px;
      padding: 0 50px;
+}.contact .contact-form .btn a{
+     color:#ffffff ;
 }
 
  /* Dark Mode  */
